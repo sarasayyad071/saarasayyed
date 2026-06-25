@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sara Sayyed Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            
+            background-color: black;
+        }
+        .branding{
+           
+            color: azure;
+            font-family: Arial;
+            padding-left: 20px;
+        }
+        .navlinks{
+            display: flex;
+            color: azure;
+            justify-content: end;
+            font-size: large;
+            align-items: center;
+            text-decoration: solid;
+            padding-right:20px ;
+            
+        }
+        .navlinks a{
+            text-decoration: none;
+            color: azure;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h2 class="logo">SARA.</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h3>HI, I'M</h3>
+            <h1>SARA SAYYED</h1>
+            <h2>FRONTEND DEVELOPER</h2>
+            <p>I build beautiful, responsive and user-friendly websites.</p>
+
+            <button>Download CV</button>
+            <button>Hire Me</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>ABOUT ME</h2>
+
+        <div class="about-box">
+            <div class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBY70Tbvm7asm06CGKtM8TZtBop4aD12jxkQ&s" alt="">
+            </div>
+
+            <div class="info">
+                <h3>Hello! I'm Sara Sayyed</h3>
+                <p>
+                    I am a passionate Frontend Developer who loves creating
+                    beautiful and functional websites.
+                </p>
+
+                <p><b>Name:</b> Sara Sayyed</p>
+                <p><b>Email:</b> sarasayyad071@gmail.com</p>
+                <p><b>From:</b> Nashik, Maharashtra</p>
+                <p><b>Freelance:</b> Available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>MY SKILLS</h2>
+
+        <div class="skill-container">
+            <div class="card">HTML - 90%</div>
+            <div class="card">CSS - 85%</div>
+            <div class="card">JavaScript - 75%</div>
+            <link rel="stylesheet" href="data:image/png;base64,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">
+            <div class="card">Bootstrap - 80%</div>
+            <div class="card">Java - 70%</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>MY PROJECTS</h2>
+
+        <div class="project-container">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio using HTML & CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>E-Commerce Website</h3>
+                <p>Responsive online shopping website.</p>
+            </div>
+
+            <div class="project">
+                <h3>Dashboard Design</h3>
+                <p>Modern admin dashboard UI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+</body>
+</html>

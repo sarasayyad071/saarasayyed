@@ -1,0 +1,286 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<style>
+    
+/* Browser ki default margin hatane ke liye taaki navbar sahi dikhe */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* space-evenly ko space-between kiya taaki layout clean lage */
+    align-items: center;
+    background-color: beige;
+    border: 1px solid rgb(221, 218, 218);
+    padding: 10px 20px; /* Thoda padding add kiya padding ke liye */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.navlinks {
+    display: flex; /* Links ko ek line me lane ke liye */
+    gap: 15px;     /* Links ke beech ka gap */
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: flex;       /* Icon aur text ko ek line me karne ke liye */
+    align-items: center;
+    gap: 8px;           /* Icon aur text ke beech ki doori */
+}
+
+/* Aapka button margin aur width ki wajah se kharab ho raha tha, use sahi kiya */
+.btn button {
+    border: none;
+    padding: 8px 16px; 
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;       /* Button ke andar icon align karne ke liye */
+    align-items: center;
+    gap: 6px;
+}
+
+.nameheading {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#quick {
+    color: orangered;
+} 
+
+.demo {
+    color: orange; /* Yellow beige par dikhta nahi, isliye orange kiya */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Searchbar ke andar icon ko set karne ke liye thodi CSS */
+.searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar i {
+    position: absolute;
+    left: 10px;
+    color: gray;
+}
+
+.searchbar input {
+    padding: 6px 10px;
+    padding-left: 30px; /Icon ke liye jagah chhodi/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.maindemo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Search aur button ke beech ka gap */
+}
+.hero-section{
+    
+    background-image: linear-gradient(rgba(20, 13, 232, 0.5),rgba(222, 91, 10, 0.5)) ,url("https://img.magnific.com/free-photo/restaurant-interior_1127-3394.jpg?semt=ais_hybrid&w=740&q=80");
+    background-position:center ;
+    background-repeat:no-repeat ;
+    background-size:cover;
+    width: 100%;
+    height:300px;
+    align-items: center;
+    display:flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+#PopularDishes{
+                text-align: center;
+                font-family: Arial, Helvetica;
+            }
+            .parent{
+                display: flex;
+                text-align: ;
+                font-family: Arial, Helvetica;
+                justify-content: space-evenly;
+            }
+            .child{
+                border: 1px solid grey;
+                height: 400px;
+                width: 300px;
+                text-align: center;
+                border-radius: 20px;
+
+
+            }
+            .image{
+                height: 150px;
+                width: 300px; 
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px ;
+            }
+            <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            background: #f8f8f8; 
+        }
+        
+        #PopularDishes{
+            text-align: center;
+            font-size: 32px;
+            margin: 30px 0;
+        }
+        
+        .parent{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .child{
+            border: 1px solid grey;
+            width: 300px;
+            text-align: center;
+            border-radius: 20px;
+            background: white;
+            overflow: hidden;
+            padding-bottom: 15px;
+        }
+        
+        .image{
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .child h2 {
+            margin: 15px 0 10px 0;
+        }
+        
+        .child p {
+            margin: 0 15px 15px;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .price{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+         
+        .box
+        {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            transition: transform 3s linear;
+        }
+        .child:hover{
+            transform: scale(0.5);
+        }
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="logo">
+<div class="nameheading">
+    <i class="fa-solid fa-utensils" style="color: orangered; font-size: 24px;"></i>
+    <h1 id="quick">Quick</h1>
+    <h1 class="demo">Bite</h1>
+</div>
+</div>
+
+<div class="navlinks">
+    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#"><i class="fa-solid fa-bowl-food"></i> Restaurant</a>
+    <a href="#"><i class="fa-solid fa-tags"></i> Offers</a>
+    <a href="#"><i class="fa-solid fa-truck"></i> Track order</a>
+    <a href="#"><i class="fa-solid fa-envelope"></i> Contact us</a>
+</div>
+<!-- cdn ki link head me copy krni hai aur icon ki link normal body me i use krke paste krni hai -->
+<div class="maindemo">
+<div class="searchbar">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="search here">
+</div>
+<div class="btn">
+    <button><i class="fa-solid fa-cart-shopping"></i> order now</button>
+</div>
+</div>
+</div> 
+<div class="hero-section">
+    <h1>Welcome to our restaurant</h1>
+    <h2>Satpur,Nashik</h2>
+ <h1 id="PopularDishes">Popular Dishes</h1>
+</div>
+<br>
+<br>
+    <div class="parent">
+        
+        <div class="child">
+            <img src="peri peri.jpg" alt="peri peri" class="image">
+            <h2>Peri Peri Fries</h2>
+            <p>Golden fries tossed in spicy peri peri</p>
+            <div class="button">
+                <span class="price">Rs. 99</span>
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <img src="pizza.png" alt="Pizza" class="image">
+            <h2>Farmhouse Pizza</h2>
+            <p>cheese burst with fresh veggies and special herbs</p>
+            <div class="button">
+                <span class="price">Rs. 247</span>
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <img src="burger.jpg" alt="Burger" class="image">
+            <h2>Classic veg Burger</h2>
+            <p>Crispy patty with cheese slice and tangy mayo sauce</p>
+            <div class="button">
+                <span class="price">Rs. 147</span>
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+ 
+</body>
+</html>
